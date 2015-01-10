@@ -1,0 +1,48 @@
+<doctype html>
+<html>
+	<body>
+ 
+	 	 
+	 	<button type="button" 	
+	 			onclick="test()">Show Time</button>
+    	
+	 			<p id="time">
+
+	 			</p>
+
+    	<script type="text/javascript">
+
+    	  function test(){
+    	  	for(var i=0; i<10; i=i+3)
+				{
+  				//console.log(i);
+				 }
+				console.log(i);
+    	  }
+
+    		function showTime(){
+
+    		var d= new Date();
+    		var ampm;
+    		if(d.getHours()<12){
+    			ampm="AM";
+    		}
+    		else{
+    			ampm="PM";
+    		}
+
+    		document.getElementById("time").innerHTML= 
+    									"Date :"+ d.getMonth()+"/" + d.getDate()+"/"+
+    												d.getFullYear()+
+    											"<br>"+
+    											"Time:"	+ d.getHours()+ " : "+
+    											d.getMinutes()+" : "+
+    										    d.getSeconds()+" "+ampm; 
+    									 
+    	
+    		}
+
+    	</script>
+
+   </body>
+ </html>

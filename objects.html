@@ -1,0 +1,30 @@
+<doctype html>
+<html>
+	<body>
+
+	 	<input  id="name" type="text">Enter name:</input>
+	 	<button type="button" 	
+	 			onclick="returnDetails(
+	 					 (document.getElementById('name')).value)">Enter</button>
+    	
+
+		<script type="text/javascript">
+			var person1={name:"simi",address:"1212 west",zipcode:94086};
+			var person2={name:"raj",address:"456 west",zipcode:86};
+			
+
+			function returnDetails(name){
+				//alert(time);
+			 
+				 if ((name.toLowerCase())===person1.name){
+				 	alert("person1 adress is "+ person1["address"]+" "+person1.zipcode);
+
+				 }
+				
+
+			}
+
+
+		</script>
+	</body>
+</html>

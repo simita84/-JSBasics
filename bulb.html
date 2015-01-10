@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		p{
+			font-size: 10px;
+		}
+
+
+	</style>
+</head>
+<body>
+
+<h1>JavaScript Can Change Images</h1>
+
+<img id="bulb" src="pic_bulboff.gif" onclick="changeImage()"/>
+<p id="para" onclick="changeFont()">Hello</p>
+
+<script type="text/javascript">
+	function changeImage(){
+		var image=document.getElementById("bulb");
+		if (image.src.match("bulboff")){
+			image.src="pic_bulbon.gif";
+		}
+		else{
+			image.src="pic_bulboff.gif";
+		}
+
+	}
+
+	function changeFont(){
+		var ele=document.getElementById("para");
+		if (ele.style.fontSize=="10px"){
+			ele.style.fontSize = "25px";
+		}
+		else{
+			ele.style.fontSize = "10px";
+		}
+
+		
+	}
+
+</script>
+</body>
+
+</html>

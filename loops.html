@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+<h1>What Can JavaScript Do?</h1>
+
+ 
+
+<button onclick="displayCars()"> Display Cars</button>
+
+
+<p id="display">
+	 
+</p>
+
+
+
+	<script type="text/javascript">
+		cars=["sentra","santro","city","sonata"];
+	
+
+	function displayCars(){
+		var text="<h3>Cars in the inventory</h3><ul>";
+			 
+		for(var i=0;i<cars.length;i++){			
+		
+			text+= "<li>"+cars[i]+"</li>";
+		}
+		 
+		document.getElementById("display").innerHTML=text+"</ul>";
+	}
+
+	function time(){
+		var d= new Date();
+		return d.getTime();
+	}
+
+	</script>
+
+	</body>
+</html>
